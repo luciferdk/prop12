@@ -6,6 +6,8 @@ import Services from "./pages/Services";
 import AboutUs from "./pages/AboutUs";
 import Employee from "./pages/Employee";
 import FAQ from "./pages/FAQ";
+import PopUp from "./pages/PopUp";
+import Plumbers from "./pages/Plumbers";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import Logo from "./utils/img/logo.png";
@@ -125,6 +127,8 @@ function App() {
 				<Route path="/FAQ" element={<FAQ />} />
 				<Route path="/Testimonials" element={<Testimonials />} />
 				<Route path="/Contact" element={<Contact />} />
+				<Route path="/PopUp" element={<PopUp />} />
+				<Route path="/Plumbers" element={<Plumbers />} />
 			</Routes>
 		</div>
 	);

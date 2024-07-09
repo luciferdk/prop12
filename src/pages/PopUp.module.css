@@ -1,0 +1,25 @@
+h1 {
+	display: flex;
+	align-items: center;
+	flex-basis: 100%;
+	justify-content: space-around;
+	margin: 40px 0;
+}
+
+.box a {
+	display: block;
+	padding: 5px;
+	width: 100px;
+	margin: 100px 45%;
+	background-color: #5bbb47;
+	color: #fff;
+	border-radius: 0.25rem;
+	text-decoration: none;
+	transition: background-color 0.05s ease;
+	border: 1px solid #002547;
+	align-items: center;
+	text-align: center;
+}
+.box a:hover {
+	background-color: #2c8dff;
+}

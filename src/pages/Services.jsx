@@ -6,11 +6,13 @@ import SubFooter from "./SubFooter";
 import Footer from "./Footer";
 import ServiceSteps from "./ServiceSteps";
 import Customerfeedback from "./CustomerFeedback";
+// import PopUp from "./PopUp";
 import { useAuth0 } from "@auth0/auth0-react";
+// import { Link, Route, Routes } from "react-router-dom";
 // import Plumber_icon_white from "../utils/img/Plumber_icon_white.svg";
 
 function Services() {
-	const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
+	const { isAuthenticated } = useAuth0();
 	return (
 		<div>
 			<div className={`${styles.services}`}>
@@ -27,9 +29,9 @@ function Services() {
 							smoothly!
 						</p>
 						{isAuthenticated ? (
-							<a href="/FAQ">Explore now → </a>
+							<a href="/Plumbers">Explore now → </a>
 						) : (
-							<a href="/Home">Explore now → </a>
+							<a href="/PopUp">Explore now → </a>
 						)}
 					</div>
 					<div className={`${styles.card}`}>
@@ -41,7 +43,11 @@ function Services() {
 							Expert electricians passionately lighting up your life with
 							reliable service!
 						</p>
-						<a href="#">Explore now → </a>
+						{isAuthenticated ? (
+							<a href="/FAQ">Explore now → </a>
+						) : (
+							<a href="/PopUp">Explore now → </a>
+						)}
 					</div>
 					<div className={`${styles.card}`}>
 						<div className={`${styles.icon_card}`}>
@@ -51,7 +57,11 @@ function Services() {
 						<p>
 							Transform your space with our professional home painting services!
 						</p>
-						<a href="#">Explore now → </a>
+						{isAuthenticated ? (
+							<a href="/FAQ">Explore now → </a>
+						) : (
+							<a href="/PopUp">Explore now → </a>
+						)}
 					</div>
 					<div className={`${styles.card}`}>
 						<div className={`${styles.icon_card}`}>
@@ -62,7 +72,11 @@ function Services() {
 							Elevate your living spaces with our bespoke interior design
 							solutions!
 						</p>
-						<a href="#">Explore now → </a>
+						{isAuthenticated ? (
+							<a href="/FAQ">Explore now → </a>
+						) : (
+							<a href="/PopUp">Explore now → </a>
+						)}
 					</div>
 					<div className={`${styles.card}`}>
 						<div className={`${styles.icon_card}`}>
@@ -73,7 +87,11 @@ function Services() {
 							Transform your yard into a stunning oasis with our expert
 							landscaping services!
 						</p>
-						<a href="#">Explore now → </a>
+						{isAuthenticated ? (
+							<a href="/FAQ">Explore now → </a>
+						) : (
+							<a href="/PopUp">Explore now → </a>
+						)}
 					</div>
 					<div className={`${styles.card}`}>
 						<div className={`${styles.icon_card}`}>
@@ -84,7 +102,11 @@ function Services() {
 							Keep your home pest-free with our fast and effective pest control
 							services!
 						</p>
-						<a href="#">Explore now → </a>
+						{isAuthenticated ? (
+							<a href="/FAQ">Explore now → </a>
+						) : (
+							<a href="/PopUp">Explore now → </a>
+						)}
 					</div>
 				</div>
 				{/* <button className={`${styles.btn}`}>See All Services</button> */}
