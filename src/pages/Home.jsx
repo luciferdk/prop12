@@ -8,6 +8,7 @@ import Customerfeedback from "./CustomerFeedback";
 import NewsLetter from "./NewsLetter";
 import SubFooter from "./SubFooter";
 import Footer from "./Footer";
+import BookAppointment from "./BookAppointment"; // Import the BookAppointment component
 
 function Home() {
 	return (
@@ -21,10 +22,7 @@ function Home() {
 						Trusted Professionals, <br />
 						Every Time.
 					</p>
-					<div className={`${styles.news_letter_bg}`}>
-						<input type="text" placeholder="Enter your phone no..." />
-						<button className={`${styles.btn}`}>Book Appointment</button>
-					</div>
+					<BookAppointment />
 				</div>
 				<div className={`${styles.part2}`}>
 					<img src={Model} alt="model" />
