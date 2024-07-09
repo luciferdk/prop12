@@ -1,0 +1,60 @@
+/* services steps */
+.service_steps {
+	background-color: #5bbb47;
+	height: auto;
+	width: auto;
+	margin-top: 50px;
+	padding: 80px 75px;
+	display: flex;
+	flex-direction: column;
+}
+
+.service_steps h2 {
+	display: flex;
+	align-items: center;
+	flex-basis: 100%;
+	justify-content: space-around;
+	padding-bottom: 30px;
+	color: #f2f3fd;
+}
+.steps {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+}
+
+.step {
+	width: 310px;
+	height: 274px;
+	padding: 15px 0px;
+	background-color: #5bbb47;
+	color: #f2f3fd;
+	margin: 20px 0;
+	transition: ease-in 0.5s;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	cursor: grab;
+}
+
+.step_circle {
+	width: 60px;
+	height: 60px;
+	background-color: #f2f3fd;
+	border-radius: 50%;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	border: 1px solid #4fa63e;
+	display: flex;
+}
+.step_circle img {
+	width: 57px;
+	height: 57px;
+	padding: 3px;
+}
+.step p {
+	padding: 0 5px;
+	text-align: center;
+}
