@@ -16,7 +16,7 @@ const BookAppointment = () => {
 			phone = "+91" + phone; // Assuming +91 for India
 		}
 
-		fetch("http://localhost:8080/send-sms", {
+		fetch("http://localhost:8008/send-sms", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/x-www-form-urlencoded",
