@@ -1,6 +1,12 @@
 import React from "react";
 import styles from "./ServicesOffered.module.css";
-import Plumber_icon from "../utils/img/Plumber_icon_blue.svg";
+import Plumber_icon from "../utils/img/plumber.png";
+import Electrician_icon from "../utils/img/electrician.png";
+import Landscaper_icon from "../utils/img/landscapers.png";
+import Designer_icon from "../utils/img/designer.png";
+import Painter_icon from "../utils/img/painter.png";
+import Pesticide_icon from "../utils/img/pesticide.png";
+
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
@@ -31,7 +37,7 @@ function Services() {
 					</div>
 					<div className={`${styles.card}`}>
 						<div className={`${styles.icon_card}`}>
-							<img src={Plumber_icon} alt="icon" />
+							<img src={Electrician_icon} alt="icon" />
 						</div>
 						<h2>Electrician</h2>
 						<p>
@@ -46,7 +52,7 @@ function Services() {
 					</div>
 					<div className={`${styles.card}`}>
 						<div className={`${styles.icon_card}`}>
-							<img src={Plumber_icon} alt="icon" />
+							<img src={Painter_icon} alt="icon" />
 						</div>
 						<h2>Painter</h2>
 						<p>
@@ -60,7 +66,7 @@ function Services() {
 					</div>
 					<div className={`${styles.card}`}>
 						<div className={`${styles.icon_card}`}>
-							<img src={Plumber_icon} alt="icon" />
+							<img src={Designer_icon} alt="icon" />
 						</div>
 						<h2>Interior Designer</h2>
 						<p>
@@ -75,7 +81,7 @@ function Services() {
 					</div>
 					<div className={`${styles.card}`}>
 						<div className={`${styles.icon_card}`}>
-							<img src={Plumber_icon} alt="icon" />
+							<img src={Landscaper_icon} alt="icon" />
 						</div>
 						<h2>Landscaper </h2>
 						<p>
@@ -90,7 +96,7 @@ function Services() {
 					</div>
 					<div className={`${styles.card}`}>
 						<div className={`${styles.icon_card}`}>
-							<img src={Plumber_icon} alt="icon" />
+							<img src={Pesticide_icon} alt="icon" />
 						</div>
 						<h2>Pest control</h2>
 						<p>

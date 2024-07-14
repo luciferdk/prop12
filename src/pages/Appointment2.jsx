@@ -24,12 +24,12 @@ function Appointment2() {
 					{/* <div className={`${styles.step_line}`}></div> */}
 					<div className={`${styles.step}`}>
 						<span className={`${styles.step_number}`}>3</span>
-						Payment Method
+						Review
 					</div>
 					{/* <div className={`${styles.step_line}`}></div> */}
 					<div className={`${styles.step}`}>
 						<span className={`${styles.step_number}`}>4</span>
-						Review
+						Payment Method
 					</div>
 				</div>
 				<div className={`${styles.form_group}`}>
@@ -44,7 +44,7 @@ function Appointment2() {
 					<Link to="/Appointment1">
 						<button className={`${styles.btn}`}>Back</button>
 					</Link>
-					<Link to="/Appointment3">
+					<Link to="/Appointment4">
 					<button className={`${styles.btn}`}>Next</button>
 					</Link>
 				</div>

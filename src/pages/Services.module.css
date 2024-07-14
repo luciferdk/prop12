@@ -21,10 +21,11 @@
 
 .cards {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	transition: all 0.3s ease;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: all 0.3s ease;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 .card {
@@ -60,10 +61,13 @@
 	display: flex;
 }
 
-.icon_card img {
-	padding: 5px;
-	/* margin-right: 100px; */
-}
+
+	.icon_card img {
+		height: 60px;
+		width: 60px;
+		padding: 3px;
+	}
+
 
 .card h2 {
 	margin: 6px 0;

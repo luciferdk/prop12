@@ -1,5 +1,6 @@
 import React, { useState } from "react"; // Import useState
-import styles from "./Home.module.css"; // Import the CSS module
+// import styles from "./Home.module.css"; // Import the CSS module
+import styles from "./BookAppointment.module.css";
 
 const BookAppointment = () => {
 	const [phoneNumber, setPhoneNumber] = useState("");

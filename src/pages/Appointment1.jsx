@@ -24,12 +24,12 @@ function Appointment1() {
 					{/* <div className={`${styles.step_line}`}></div> */}
 					<div className={`${styles.step}`}>
 						<span className={`${styles.step_number}`}>3</span>
-						Payment Method
+						Review
 					</div>
 					{/* <div className={`${styles.step_line}`}></div> */}
 					<div className={`${styles.step}`}>
 						<span className={`${styles.step_number}`}>4</span>
-						Review
+						Payment Method
 					</div>
 				</div>
 				<form className={`${styles.pform}`}>

@@ -26,12 +26,12 @@ function Appointment4() {
 					{/* <div className={`${styles.step_line}`}></div> */}
 					<div className={`${styles.step}`}>
 						<span className={`${styles.step_number}`}>3</span>
-						Payment Method
+						Review
 					</div>
 					{/* <div className={`${styles.step_line}`}></div> */}
 					<div className={`${styles.step}`}>
 						<span className={`${styles.step_number}`}>4</span>
-						Review
+						Payment Method
 					</div>
 				</div>
 				<form className={`${styles.pform}`}>
@@ -55,12 +55,12 @@ function Appointment4() {
 						<input type="time" id="time" name="time" required />
 					</div>
 					<div className={`${styles.buttons}`}>
-						<Link to="/Appointment3">
+						<Link to="/Appointment2">
 							<button className={`${styles.btn}`}>Back</button>
 						</Link>
 
-						<Link to="/Booked">
-							<button className={`${styles.btn}`}>Done</button>
+						<Link to="/Appointment3">
+							<button className={`${styles.btn}`}>Next</button>
 						</Link>
 					</div>
 				</form>
