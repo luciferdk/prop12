@@ -3,7 +3,7 @@ import styles from "./Plumbers.module.css";
 import NewsLetter from "./NewsLetter";
 import SubFooter from "./SubFooter";
 import Footer from "./Footer";
-import Plumber_icon from "../utils/img/Plumber_icon_white.svg";
+import Plumber_icon from "../utils/img/designer.png";
 import { Link } from "react-router-dom";
 function Designers() {
 	return (
@@ -17,7 +17,7 @@ function Designers() {
 								<img className="img1" src={Plumber_icon} alt="icon blue" />
 								{/* <img className="img2" src={Plumber_icon_white} alt="icon white" /> */}
 							</div>
-							<h2>Rohit Majumdar</h2>
+							<h2> Meera Banerjee</h2>
 						</div>
 						<div className={`${styles.sec2}`}>
 							<p>
@@ -47,7 +47,7 @@ function Designers() {
 								<img className="img1" src={Plumber_icon} alt="icon blue" />
 								{/* <img className="img2" src={Plumber_icon_white} alt="icon white" /> */}
 							</div>
-							<h2>Prahlad Sinha</h2>
+							<h2>Piyali Sinha</h2>
 						</div>
 						<div className={`${styles.sec2}`}>
 							<p>
@@ -77,7 +77,7 @@ function Designers() {
 								<img className="img1" src={Plumber_icon} alt="icon blue" />
 								{/* <img className="img2" src={Plumber_icon_white} alt="icon white" /> */}
 							</div>
-							<h2>Rohit Majumdar</h2>
+							<h2> Rituparna Mandal</h2>
 						</div>
 						<div className={`${styles.sec2}`}>
 							<p>
