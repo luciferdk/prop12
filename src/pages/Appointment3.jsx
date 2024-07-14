@@ -1,13 +1,13 @@
 import React from "react";
-import styles from "./Appointment2.module.css";
+import styles from "./Appointment3.module.css";
 import { Link } from "react-router-dom";
-function Appointment2() {
+function Appointment3() {
 	return (
 		<>
 			<div className={`${styles.container}`}>
 				<h1>Tell Us Your Home Service Needs!</h1>
 				{/* <p>
-					Helping Hand's comprehensive range of home maintenance and
+					Welcome to Helping Hand's comprehensive range of home maintenance and
 					improvement services.
 				</p> */}
 				<div className={`${styles.steps}`}>
@@ -32,20 +32,25 @@ function Appointment2() {
 						Review
 					</div>
 				</div>
-				<div className={`${styles.form_group}`}>
-					<label htmlFor="date">Choose Your Date *</label>
-					<input type="date" id="date" name="date" required />
-				</div>
-				<div className={`${styles.form_group}`}>
-					<label htmlFor="time">Choose Your Time *</label>
-					<input type="time" id="time" name="time" required />
-				</div>
+                <div className={`${styles.drop}`}>
+				<label htmlFor="service">Methods of Payment</label>
+				<select className={`${styles.dropdown}`} id="service">
+					<option value>Select mathod</option>
+					<option value="credit_debit">Credit/Debit</option>
+					<option value="cod">Cash on Delivery</option>
+					<option value="upi">UPI Transaction</option>
+					<option value="net_banking">Net Banking</option>
+					{/* <option value="plumbing">Landscaping</option>
+					<option value="electrical">Interior Designing</option> */}
+				</select>
+                </div>
 				<div className={`${styles.buttons}`}>
-					<Link to="/Appointment1">
+					<Link to="/Appointment2">
 						<button className={`${styles.btn}`}>Back</button>
 					</Link>
-					<Link to="/Appointment3">
-					<button className={`${styles.btn}`}>Next</button>
+
+					<Link to="/Appointment4">
+						<button className={`${styles.btn}`}>Next</button>
 					</Link>
 				</div>
 			</div>
@@ -53,4 +58,4 @@ function Appointment2() {
 	);
 }
 
-export default Appointment2;
+export default Appointment3;

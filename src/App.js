@@ -18,6 +18,9 @@ import Landscapers from "./pages/Landscapers";
 import PestControlers from "./pages/PestControlers";
 import Appointment1 from "./pages/Appointment1";
 import Appointment2 from "./pages/Appointment2";
+import Appointment3 from "./pages/Appointment3";
+import Appointment4 from "./pages/Appointment4";
+import Booked from "./pages/Booked";
 
 function App() {
 	const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
@@ -143,6 +146,9 @@ function App() {
 				<Route path="/PestControlers" element={<PestControlers />} />
 				<Route path="/Appointment1" element={<Appointment1 />} />
 				<Route path="/Appointment2" element={<Appointment2 />} />
+				<Route path="/Appointment3" element={<Appointment3 />} />
+				<Route path="/Appointment4" element={<Appointment4 />} />
+				<Route path="/Booked" element={<Booked />} />
 			</Routes>
 		</div>
 	);
