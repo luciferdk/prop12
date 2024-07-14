@@ -15,17 +15,17 @@ body {
 }
 
 h1 {
-	font-size: 2em;
-	margin-bottom: 10px;
-}
-p {
-	font-size: 1em;
+	text-align: center;
 	margin-bottom: 20px;
+	color: #333;
 }
+
 .steps {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	margin-bottom: 30px;
+	/* align-items: center; */
+	/* display: flex 	  	; */
 }
 
 .step {
@@ -33,46 +33,20 @@ p {
 	align-items: center;
 	background-color: #5bbb47;
 	padding: 10px 20px;
-	border-radius: 5px;
-	font-weight: bold;
+	justify-content: space-around;
+	height: 400px;
+	width: 400px;
+	
+	border-radius: 50%;
+	font-weight: 900;
 	color: #fff;
 }
 
-.step_number {
-	margin-right: 10px;
-	background-color: #fff;
-	padding: 5px 10px;
-	border-radius: 50%;
-	color: #333;
-	font-size: 16px;
+.buttons {
+	display: flex;
+	justify-content: space-around;
 }
 
-.pform {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	margin-bottom: 20px;
-}
-.pform label {
-	margin-bottom: 5px;
-}
-.pform input,
-.pform textarea {
-	padding: 10px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	margin-bottom: 15px;
-	width: 100%;
-}
-.pform textarea {
-	height: 100px;
-}
-.pform .dropdown {
-	padding: 10px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	margin-bottom: 15px;
-}
 .btn {
 	display: inline-block;
 	background-color: #2c8dff;
