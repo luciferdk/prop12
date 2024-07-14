@@ -44,7 +44,7 @@ function Services() {
 							reliable service!
 						</p>
 						{isAuthenticated ? (
-							<a href="/FAQ">Explore now → </a>
+							<a href="/Electricians">Explore now → </a>
 						) : (
 							<a href="/PopUp">Explore now → </a>
 						)}
@@ -58,7 +58,7 @@ function Services() {
 							Transform your space with our professional home painting services!
 						</p>
 						{isAuthenticated ? (
-							<a href="/FAQ">Explore now → </a>
+							<a href="/Painters">Explore now → </a>
 						) : (
 							<a href="/PopUp">Explore now → </a>
 						)}
@@ -73,7 +73,7 @@ function Services() {
 							solutions!
 						</p>
 						{isAuthenticated ? (
-							<a href="/FAQ">Explore now → </a>
+							<a href="/Designers">Explore now → </a>
 						) : (
 							<a href="/PopUp">Explore now → </a>
 						)}
@@ -88,7 +88,7 @@ function Services() {
 							landscaping services!
 						</p>
 						{isAuthenticated ? (
-							<a href="/FAQ">Explore now → </a>
+							<a href="/Landscapers">Explore now → </a>
 						) : (
 							<a href="/PopUp">Explore now → </a>
 						)}
@@ -103,7 +103,7 @@ function Services() {
 							services!
 						</p>
 						{isAuthenticated ? (
-							<a href="/FAQ">Explore now → </a>
+							<a href="/PestControlers">Explore now → </a>
 						) : (
 							<a href="/PopUp">Explore now → </a>
 						)}

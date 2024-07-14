@@ -1,0 +1,83 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+}
+
+.container {
+	max-width: 800px;
+	margin: 50px auto;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.steps {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.step {
+	display: flex;
+	align-items: center;
+	background-color: #5bbb47;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.step_number {
+	margin-right: 10px;
+	background-color: #fff;
+	padding: 5px 10px;
+	border-radius: 50%;
+	color: #333;
+	font-size: 16px;
+}
+.form_group {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #5bbb47;
+}

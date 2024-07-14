@@ -3,14 +3,13 @@ import styles from "./Plumbers.module.css";
 import NewsLetter from "./NewsLetter";
 import SubFooter from "./SubFooter";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
 import Plumber_icon from "../utils/img/Plumber_icon_white.svg";
-
-function Plumbers() {
+import { Link } from "react-router-dom";
+function Painters() {
 	return (
 		<>
 			<div className={`${styles.plumbers}`}>
-				<h1>Our Best Plumbers </h1>
+				<h1>Our Best Painters </h1>
 				<div className={`${styles.pcards} `}>
 					<div className={`${styles.pcard}`}>
 						<div className={`${styles.sec1}`}>
@@ -115,4 +114,4 @@ function Plumbers() {
 	);
 }
 
-export default Plumbers;
+export default Painters;

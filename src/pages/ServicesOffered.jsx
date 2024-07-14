@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ServicesOffered.module.css";
 import Plumber_icon from "../utils/img/Plumber_icon_blue.svg";
-
+import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
 // import Plumber_icon_white from "../utils/img/Plumber_icon_white.svg";
@@ -39,7 +39,7 @@ function Services() {
 							reliable service!
 						</p>
 						{isAuthenticated ? (
-							<a href="/FAQ">Explore now → </a>
+							<a href="/Electricians">Explore now → </a>
 						) : (
 							<a href="/PopUp">Explore now → </a>
 						)}
@@ -53,7 +53,7 @@ function Services() {
 							Transform your space with our professional home painting services!
 						</p>
 						{isAuthenticated ? (
-							<a href="/FAQ">Explore now → </a>
+							<a href="/Painters">Explore now → </a>
 						) : (
 							<a href="/PopUp">Explore now → </a>
 						)}
@@ -68,7 +68,7 @@ function Services() {
 							solutions!
 						</p>
 						{isAuthenticated ? (
-							<a href="/FAQ">Explore now → </a>
+							<a href="/Designers">Explore now → </a>
 						) : (
 							<a href="/PopUp">Explore now → </a>
 						)}
@@ -83,7 +83,7 @@ function Services() {
 							landscaping services!
 						</p>
 						{isAuthenticated ? (
-							<a href="/FAQ">Explore now → </a>
+							<a href="/Landscapers">Explore now → </a>
 						) : (
 							<a href="/PopUp">Explore now → </a>
 						)}
@@ -98,13 +98,15 @@ function Services() {
 							services!
 						</p>
 						{isAuthenticated ? (
-							<a href="/FAQ">Explore now → </a>
+							<a href="/PestControlers">Explore now → </a>
 						) : (
 							<a href="/PopUp">Explore now → </a>
 						)}
 					</div>
 				</div>
-				<button className={`${styles.btn}`}>See All Services</button>
+				<Link to="/Services">
+					<button className={`${styles.btn}`}>See All Services</button>
+				</Link>
 			</div>
 		</div>
 	);

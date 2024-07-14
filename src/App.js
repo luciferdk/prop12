@@ -11,6 +11,13 @@ import Plumbers from "./pages/Plumbers";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import Logo from "./utils/img/logo.png";
+import Electricians from "./pages/Electricians";
+import Painters from "./pages/Painters";
+import Designers from "./pages/Designers";
+import Landscapers from "./pages/Landscapers";
+import PestControlers from "./pages/PestControlers";
+import Appointment1 from "./pages/Appointment1";
+import Appointment2 from "./pages/Appointment2";
 
 function App() {
 	const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
@@ -129,6 +136,13 @@ function App() {
 				<Route path="/Contact" element={<Contact />} />
 				<Route path="/PopUp" element={<PopUp />} />
 				<Route path="/Plumbers" element={<Plumbers />} />
+				<Route path="/Electricians" element={<Electricians />} />
+				<Route path="/Painters" element={<Painters />} />
+				<Route path="/Designers" element={<Designers />} />
+				<Route path="/Landscapers" element={<Landscapers />} />
+				<Route path="/PestControlers" element={<PestControlers />} />
+				<Route path="/Appointment1" element={<Appointment1 />} />
+				<Route path="/Appointment2" element={<Appointment2 />} />
 			</Routes>
 		</div>
 	);

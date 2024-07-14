@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Customerfeedback.module.css";
+import { Link } from "react-router-dom";
 
 function Customerfeedback() {
 	return (
@@ -56,7 +57,9 @@ function Customerfeedback() {
 						</div>
 					</div>
 				</div>
-				<button className={`${styles.btn}`}>See All Feedbacks</button>
+				<Link to="/Testimonials">
+					<button className={`${styles.btn}`}>See All Feedbacks</button>
+				</Link>
 			</div>
 		</>
 	);

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ServiceGrp.module.css";
 import Grp from "../utils/img/grp.png";
-
+import { Link } from "react-router-dom";
 function ServiceGrp() {
 	return (
 		<>
@@ -20,7 +20,9 @@ function ServiceGrp() {
 						Helping Hand, where your satisfaction is our ultimate priority.....
 						<span>Read more</span>
 					</p>
-					<button className={`${styles.btn}`}>See All Services</button>
+					<Link to="/AboutUs">
+						<button className={`${styles.btn}`}>See All Services</button>
+					</Link>
 				</div>
 				<div className={`${styles.part2}`}>
 					<img src={Grp} alt="model" />
