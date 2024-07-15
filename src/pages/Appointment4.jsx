@@ -1,9 +1,37 @@
-import React from "react";
-
+import React, { useState, useEffect} from "react";
 import styles from "./Appointment4.module.css";
+import { Link, useLocation } from "react-router-dom";
+import axios from 'axios';
 
-import { Link } from "react-router-dom";
+
+
+
 function Appointment4() {
+	
+	const location = useLocation();
+	// Get data from Appointment1
+	const initialData = location.state || {};
+
+	const [formData, setFormData] = useState(initialData);
+	const [userDetails, setUserDetails] = useState({});
+
+	useEffect(() => {
+		const fetchUserDetails = async () => {
+		  try {
+			const response = await axios.get(`http://localhost:8080/showUser?phoneNumber=${formData.phoneNumber}`);
+			setUserDetails(response.data);
+		  } catch (error) {
+			console.error('Error fetching user details:', error);
+			// Handle error, e.g., display error message
+		  }
+		};
+	  
+		if (formData.phoneNumber) {
+		  fetchUserDetails();
+		}
+	  }, [formData.phoneNumber]);
+
+
 	return (
 		<>
 			<div className={`${styles.container}`}>
@@ -34,37 +62,18 @@ function Appointment4() {
 						Payment Method
 					</div>
 				</div>
-				<form className={`${styles.pform}`}>
-					<label htmlFor="name">Given Name *</label>
-					<input type="text" id="name" placeholder="Your name..." />
-					<label htmlFor="phone">Given Phone number *</label>
-					<input type="text" id="phone" placeholder="Phone number..." />
-
-					<label htmlFor="message">Your additional message *</label>
-					<textarea
-						id="message"
-						placeholder="Write your message here..."
-						defaultValue={""}
-					/>
-					<div className={`${styles.form_group}`}>
-						<label htmlFor="date">Choosen Your Date *</label>
-						<input type="date" id="date" name="date" required />
-					</div>
-					<div className={`${styles.form_group}`}>
-						<label htmlFor="time">Choosen Your Time *</label>
-						<input type="time" id="time" name="time" required />
-					</div>
-					<div className={`${styles.buttons}`}>
-						<Link to="/Appointment2">
+				
+				<div className={`${styles.buttons}`}>
+				<Link to="/Appointment2">
 							<button className={`${styles.btn}`}>Back</button>
 						</Link>
 
 						<Link to="/Appointment3">
 							<button className={`${styles.btn}`}>Next</button>
 						</Link>
-					</div>
-				</form>
+						</div>
 			</div>
+			
 		</>
 	);
 }

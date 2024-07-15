@@ -11,7 +11,7 @@ function Plumbers() {
 		<>
 			<div className={`${styles.plumbers}`}>
 				<h1>Our Best Plumbers </h1>
-				<div className={`${styles.pcards} `}>
+				<div className={`plumber001 ${styles.pcards} `}>
 					<div className={`${styles.pcard}`}>
 						<div className={`${styles.sec1}`}>
 							<div className={`${styles.picon_card}`}>

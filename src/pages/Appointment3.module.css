@@ -51,6 +51,11 @@ h1 {
     flex-direction: column;
     align-items: stretch;
 }
+.drop001{
+	margin-top: 80px;
+	text-align: center;
+	height: 150px;
+}
 
 .dropdown{
     height: 40px;

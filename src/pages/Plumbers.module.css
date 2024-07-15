@@ -45,10 +45,7 @@
 	align-content: space-around;
 }
 
-.pcard:hover {
-	background-color: #2c8dff;
-	cursor: pointer;
-}
+
 
 .picon_card {
 	width: 80px;
@@ -113,6 +110,7 @@
 .pcard:hover {
 	background-color: #2c8dff;
 	color: white;
+	cursor: pointer;
 }
 
 .pcard:hover h2 {
@@ -162,6 +160,6 @@
 	margin: 15px;
 }
 
-/* .sec3 h4 {
+.sec3 h4 {
 	margin-top: 20px;
-} */
+}
