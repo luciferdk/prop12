@@ -20,10 +20,7 @@ function Appointment1() {
     e.preventDefault();
     navigate('/Appointment2', { state: formData }); // Pass formData to Appointment2
   };
-/*   const handleSubmitButtons = (e) => {
-    e.preventDefault();
-    navigate('/Appointment4', { state: formData }); // Pass formData to Appointment2
-  }; */
+
 
   return (
     <>
