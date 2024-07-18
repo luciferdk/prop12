@@ -45,20 +45,21 @@ h1 {
 	font-size: 16px;
 }
 
-.drop{
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+.drop {
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 }
-.drop001{
+
+.drop001 {
 	margin-top: 80px;
 	text-align: center;
 	height: 150px;
 }
 
-.dropdown{
-    height: 40px;
+.dropdown {
+	height: 40px;
 
 }
 
@@ -66,7 +67,7 @@ h1 {
 	display: block;
 	margin-bottom: 20px;
 	font-weight: bold;
-    font-size: large;
+	font-size: large;
 }
 
 
