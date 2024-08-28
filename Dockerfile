@@ -1,22 +1,23 @@
-     FROM node:20  
 
-     #set the working directory
-	 WORKDIR /app     
-	 
-     # Copy the rest of the application code
-     COPY . .    
-	 
-     #install dependincy
-     RUN npm install  
-     RUN npm install axios
-	 
-     #Build the application
-     RUN npm run build
-     #install the serve globally
-     RUN npm install -g serve
+FROM node:20
 
-     #Expose port 3000
-	 EXPOSE 3000
-	 
-     #command to run the application
-     CMD ["serve", "-s", "build"] 
+# Set the working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json first for better caching
+COPY package*.json ./
+
+# Install dependencies
+RUN npm ci
+
+# Copy the rest of the application code
+COPY . .
+
+# Build the application
+RUN npm run build
+
+# Expose port 3000
+EXPOSE 3000
+
+# Command to run the application
+CMD ["npm", "start"]
